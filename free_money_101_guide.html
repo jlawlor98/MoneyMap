@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Free Money 101: Essential Personal Finance Guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- You can add print styles here to enforce page breaks -->
+  <style>
+    .page { page-break-after: always; padding: 2rem; }
+    h1, h2, h3, h4 { font-family: 'DM Sans', sans-serif; }
+    body { font-family: 'DM Sans', sans-serif; line-height: 1.6; }
+    table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+    table, th, td { border: 1px solid #ccc; }
+    th, td { padding: 0.5rem; text-align: left; }
+    .budget-method { margin-bottom: 1rem; }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <!-- Page 1: Cover / Introduction -->
+  <div class="page" id="page1">
+    <header class="guide-header">
+      <h1>Free Money 101</h1>
+      <p>Your Essential Personal Finance Guide</p>
+    </header>
+    <section>
+      <h2>Welcome</h2>
+      <p>This guide is designed for young professionals looking to master their finances—covering budgeting, saving, investing, tax strategies, and more. Our goal is to provide clear, actionable advice without overwhelming you with jargon.</p>
+      <p>Enjoy interactive elements, detailed examples, and practical tips throughout.</p>
+    </section>
+  </div>
+
+  <!-- Page 2: Table of Contents -->
+  <div class="page" id="page2">
+    <h2>Table of Contents</h2>
+    <ol>
+      <li>Introduction & Overview</li>
+      <li>Budgeting Basics</li>
+      <li>Emergency Fund Calculator</li>
+      <li>ISA Comparison</li>
+      <li>Boosting Your Credit Score</li>
+      <li>Debt Management Strategies</li>
+      <li>Investing Principles</li>
+      <li>Retirement Planning</li>
+      <li>Saving & Expense Reduction</li>
+      <li>Risk Management</li>
+      <li>Property & Asset Investment</li>
+      <li>Tax Overview</li>
+      <li>Tax Cheatsheet</li>
+      <li>Financial Planning Summary</li>
+      <li>Interactive Q&A</li>
+      <li>Frequently Asked Questions</li>
+      <li>Case Studies</li>
+      <li>Tools & Resources</li>
+      <li>Further Reading</li>
+      <li>Conclusion & Next Steps</li>
+    </ol>
+  </div>
+
+  <!-- Page 3: Budgeting Basics -->
+  <div class="page" id="page3">
+    <h2>📘 Budgeting Basics</h2>
+    <p>Budgeting is the cornerstone of effective financial management. In this section, we explain three proven methods:</p>
+    <div class="budget-method">
+      <h3>📊 The 50/30/20 Rule</h3>
+      <p>This method suggests allocating 50% of your income for essentials (rent, bills), 30% for discretionary spending (entertainment, dining out), and 20% for savings and investments. For example, on a monthly income of £3,000, you would allocate £1,500, £900, and £600 respectively.</p>
+    </div>
+    <div class="budget-method">
+      <h3>📝 Zero-Based Budgeting</h3>
+      <p>In zero-based budgeting, every pound you earn is assigned a purpose. Begin with your total income and subtract every planned expense until you reach zero, ensuring no money is wasted.</p>
+    </div>
+    <div class="budget-method">
+      <h3>💵 Envelope System</h3>
+      <p>This method involves dividing cash into envelopes for various spending categories. When the envelope is empty, you can’t spend more in that category. Digital versions of this system are available via budgeting apps.</p>
+    </div>
+    <p>Each method has its strengths—choose one that best suits your spending habits and financial goals.</p>
+  </div>
+
+  <!-- Page 4: Emergency Fund Overview -->
+  <div class="page" id="page4">
+    <h2>🧮 Emergency Fund: Why It Matters</h2>
+    <p>An emergency fund provides a safety net for unexpected events such as job loss, medical emergencies, or urgent home repairs. Financial experts typically recommend saving between 3 to 6 months of living expenses.</p>
+    <p>This fund is not an investment—it’s a secure reserve that keeps you afloat during tough times.</p>
+  </div>
+
+  <!-- Page 5: Emergency Fund Calculator -->
+  <div class="page" id="page5">
+    <h2>🧮 Emergency Fund Calculator</h2>
+    <p>Use the interactive calculator below to estimate your recommended emergency fund.</p>
+    <label for="monthly-expenses">Monthly Expenses (£):</label>
+    <input type="number" id="monthly-expenses" placeholder="Enter your monthly expenses">
+    <button onclick="calculateEmergencyFund()">Calculate</button>
+    <p id="result"></p>
+    <p><strong>Expert Tip:</strong> Revisit your budget regularly and adjust your emergency fund as needed.</p>
+  </div>
+
+  <!-- Page 6: ISA Comparison Introduction -->
+  <div class="page" id="page6">
+    <h2>📊 Understanding ISAs</h2>
+    <p>Individual Savings Accounts (ISAs) provide tax-free interest and investment growth. In the UK, they are popular tools for building wealth.</p>
+    <p>Below, we compare different types of ISAs to help you choose the best option for your financial goals.</p>
+  </div>
+
+  <!-- Page 7: Detailed ISA Comparison -->
+  <div class="page" id="page7">
+    <h2>📊 2025 ISA Comparison</h2>
+    <table>
+      <caption>ISA Types and Their Benefits</caption>
+      <tr>
+        <th>Type</th>
+        <th>Best For</th>
+        <th>Tax Benefits</th>
+      </tr>
+      <tr>
+        <td>Cash ISA</td>
+        <td>Low-risk savings</td>
+        <td>Tax-free interest</td>
+      </tr>
+      <tr>
+        <td>Stocks & Shares ISA</td>
+        <td>Long-term growth</td>
+        <td>Tax-free capital gains</td>
+      </tr>
+      <tr>
+        <td>Lifetime ISA</td>
+        <td>First-time homebuyers</td>
+        <td>25% government bonus on savings</td>
+      </tr>
+      <tr>
+        <td>Innovative Finance ISA</td>
+        <td>P2P lending opportunities</td>
+        <td>Tax-free returns</td>
+      </tr>
+    </table>
+    <p>Each ISA type has its own risk and reward profile. Consider your risk tolerance and long-term goals when selecting an ISA.</p>
+  </div>
+
+  <!-- Page 8: Credit Score Essentials -->
+  <div class="page" id="page8">
+    <h2>📈 Boosting Your Credit Score</h2>
+    <p>Your credit score is a vital part of your financial profile. A good score can help secure loans, lower interest rates, and even improve job prospects.</p>
+    <ul>
+      <li>Pay all bills on time.</li>
+      <li>Maintain a credit utilization rate below 30%.</li>
+      <li>Avoid multiple credit applications in a short time.</li>
+      <li>Regularly check your credit report for errors.</li>
+    </ul>
+    <p>Improving your credit score is a gradual process but has long-lasting benefits.</p>
+  </div>
+
+  <!-- Page 9: Debt Management Strategies -->
+  <div class="page" id="page9">
+    <h2>💳 Debt Management Strategies</h2>
+    <p>Managing debt effectively is crucial for long-term financial health. Consider these strategies:</p>
+    <h3>Snowball Method</h3>
+    <p>Focus on paying off the smallest debts first to build momentum.</p>
+    <h3>Avalanche Method</h3>
+    <p>Target debts with the highest interest rates first, reducing the overall interest paid.</p>
+    <h3>Balance Transfers</h3>
+    <p>If you have high-interest credit card debt, a balance transfer to a lower interest card might help you save money.</p>
+  </div>
+
+  <!-- Page 10: Investing Principles -->
+  <div class="page" id="page10">
+    <h2>📈 Investing Principles</h2>
+    <p>Investing is about growing your wealth over time. Whether you’re saving for retirement or a major purchase, a diversified investment portfolio can help you reach your goals.</p>
+    <ul>
+      <li>Diversify your investments across asset classes.</li>
+      <li>Invest for the long term to ride out market fluctuations.</li>
+      <li>Consider low-cost index funds for steady growth.</li>
+    </ul>
+    <p>Even small, consistent contributions can yield significant growth thanks to the power of compound interest.</p>
+  </div>
+
+  <!-- Page 11: Retirement Planning -->
+  <div class="page" id="page11">
+    <h2>👵 Retirement Planning</h2>
+    <p>Planning for retirement early can ensure a comfortable lifestyle in your later years. Consider these steps:</p>
+    <ul>
+      <li>Determine your retirement goals and estimate future expenses.</li>
+      <li>Contribute regularly to pension schemes or retirement accounts.</li>
+      <li>Explore tax-advantaged retirement savings options like SIPPs or employer-sponsored plans.</li>
+    </ul>
+    <p>Remember, it’s never too early to start planning for retirement.</p>
+  </div>
+
+  <!-- Page 12: Saving & Expense Reduction -->
+  <div class="page" id="page12">
+    <h2>💰 Saving & Expense Reduction</h2>
+    <p>Effective saving is about both increasing income and reducing unnecessary expenses. Here are a few tips:</p>
+    <ul>
+      <li>Review subscriptions and cancel unused services.</li>
+      <li>Plan meals to reduce food waste and dining costs.</li>
+      <li>Use budgeting apps to track and manage spending.</li>
+    </ul>
+    <p>By optimizing your expenses, you can free up more money to invest in your future.</p>
+  </div>
+
+  <!-- Page 13: Risk Management & Insurance -->
+  <div class="page" id="page13">
+    <h2>🛡️ Risk Management & Insurance</h2>
+    <p>Risk management is about protecting yourself from unforeseen financial losses. Consider the following:</p>
+    <ul>
+      <li>Establish an emergency fund (as detailed earlier).</li>
+      <li>Invest in appropriate insurance policies: health, home, auto, and life insurance.</li>
+      <li>Diversify your investments to reduce overall portfolio risk.</li>
+    </ul>
+    <p>Proper risk management ensures you are covered when unexpected events occur.</p>
+  </div>
+
+  <!-- Page 14: Property & Asset Investment -->
+  <div class="page" id="page14">
+    <h2>🏠 Property & Asset Investment</h2>
+    <p>Investing in property or tangible assets can be an effective way to build long-term wealth. Consider:</p>
+    <ul>
+      <li>Residential property investments for rental income.</li>
+      <li>Real Estate Investment Trusts (REITs) for diversification without direct property management.</li>
+      <li>Alternative investments such as commodities or collectibles.</li>
+    </ul>
+    <p>Assess your risk tolerance and financial goals before venturing into property investment.</p>
+  </div>
+
+  <!-- Page 15: Tax Overview -->
+  <div class="page" id="page15">
+    <h2>💷 Tax Overview</h2>
+    <p>Understanding the UK tax system can help you optimize your finances. Key points include:</p>
+    <ul>
+      <li>Know your personal tax allowance.</li>
+      <li>Understand the different income tax bands and rates.</li>
+      <li>Be aware of capital gains and dividend tax rules.</li>
+    </ul>
+    <p>This knowledge enables you to plan ahead and reduce your overall tax liability.</p>
+  </div>
+
+  <!-- Page 16: Tax Cheatsheet -->
+  <div class="page" id="page16">
+    <h2>📑 Tax Cheatsheet</h2>
+    <p>Keep this quick reference guide on key tax thresholds and allowances handy:</p>
+    <ul>
+      <li><strong>Personal Allowance:</strong> £12,570</li>
+      <li><strong>Higher Rate Threshold:</strong> £50,270</li>
+      <li><strong>Additional Rate Threshold:</strong> Above £150,000</li>
+      <li><strong>Dividend Allowance:</strong> £1,000</li>
+      <li><strong>Capital Gains Tax Allowance:</strong> £6,000</li>
+    </ul>
+  </div>
+
+  <!-- Page 17: Financial Planning Summary -->
+  <div class="page" id="page17">
+    <h2>📊 Financial Planning Summary</h2>
+    <p>Let’s summarize the key takeaways:</p>
+    <ul>
+      <li>Build a solid budget that works for you.</li>
+      <li>Create an emergency fund for unexpected expenses.</li>
+      <li>Choose the right ISA to grow your savings tax-free.</li>
+      <li>Maintain a good credit score to access better financial opportunities.</li>
+      <li>Manage debt effectively and invest with a long-term view.</li>
+      <li>Plan for retirement early and optimize your tax strategy.</li>
+    </ul>
+    <p>By following these strategies, you’ll be well on your way to financial independence.</p>
+  </div>
+
+  <!-- Page 18: Interactive Q&A & Self-Assessment -->
+  <div class="page" id="page18">
+    <h2>❓ Interactive Q&A & Self-Assessment</h2>
+    <p>Test your financial knowledge with this self-assessment quiz:</p>
+    <ol>
+      <li>What percentage of your income should ideally be saved according to the 50/30/20 rule?</li>
+      <li>How many months’ worth of expenses should your emergency fund cover?</li>
+      <li>What is the key benefit of a Stocks & Shares ISA?</li>
+    </ol>
+    <p>Reflect on these questions and consider discussing your answers with a financial advisor for personalized advice.</p>
+  </div>
+
+  <!-- Page 19: Case Studies & Real-Life Examples -->
+  <div class="page" id="page19">
+    <h2>📚 Case Studies & Real-Life Examples</h2>
+    <p>Learn from others who have transformed their financial lives:</p>
+    <h3>Case Study 1: Sarah's Journey to Debt Freedom</h3>
+    <p>Sarah used the snowball method to clear multiple credit card debts, freeing up cash to start saving for a home deposit.</p>
+    <h3>Case Study 2: Mark’s Investment Breakthrough</h3>
+    <p>Starting with small contributions to a Stocks & Shares ISA, Mark’s disciplined approach resulted in significant long-term growth.</p>
+    <p>These stories highlight the importance of a tailored financial strategy that adapts to your circumstances.</p>
+  </div>
+
+  <!-- Page 20: Conclusion & Next Steps -->
+  <div class="page" id="page20">
+    <h2>🔚 Conclusion & Next Steps</h2>
+    <p>Congratulations on completing Free Money 101! You now have a roadmap to better financial health. Here are your next steps:</p>
+    <ul>
+      <li>Review your budget and adjust it according to the methods discussed.</li>
+      <li>Calculate and build your emergency fund.</li>
+      <li>Choose an ISA that aligns with your financial goals.</li>
+      <li>Monitor and improve your credit score regularly.</li>
+      <li>Plan your investments and retirement with a long-term perspective.</li>
+      <li>Keep learning: financial literacy is a lifelong journey.</li>
+    </ul>
+    <p>We hope this guide empowers you to take control of your financial future. For more resources, tools, and advice, visit our website or subscribe to our newsletter.</p>
+    <p><em>Your financial journey starts here!</em></p>
+  </div>
+
+  <!-- PDF Download Section (Fixed Footer for Web Version) -->
+  <footer style="text-align: center; padding: 1rem 0; border-top: 1px solid #ccc;">
+    <p>Download the full guide as a PDF for offline reading.</p>
+    <button onclick="downloadPDF()">Download PDF</button>
+  </footer>
+
+  <script>
+    function calculateEmergencyFund() {
+      let expenses = parseFloat(document.getElementById("monthly-expenses").value);
+      if (isNaN(expenses) || expenses <= 0) {
+        document.getElementById("result").innerText = "Please enter a valid amount.";
+        return;
+      }
+      let emergencyFund = expenses * 3;
+      document.getElementById("result").innerText = `Recommended emergency fund: £${emergencyFund.toFixed(2)}`;
+    }
+    
+    function downloadPDF() {
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF('p', 'pt', 'a4');
+      // For demonstration, only cover the cover page text. For a full PDF export,
+      // you might need to use html2canvas or a server-side approach to render all pages.
+      doc.text("Free Money 101: Essential Personal Finance Guide", 40, 40);
+      doc.text("Your essential guide to mastering personal finance", 40, 80);
+      doc.text("Please refer to the online version for the full interactive guide.", 40, 120);
+      doc.save("Free_Money_101_Guide.pdf");
+    }
+  </script>
+</body>
+</html>
